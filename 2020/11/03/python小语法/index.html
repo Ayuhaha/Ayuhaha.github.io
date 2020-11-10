@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《如何在有限的时间爱你？》, Hexo">
+    <meta name="keywords" content="python小语法, Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《如何在有限的时间爱你？》 | Hexo</title>
+    <title>python小语法 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -315,7 +315,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《如何在有限的时间爱你？》</h1>
+                    <h1 class="description center-align post-title">python小语法</h1>
                 </div>
             </div>
         </div>
@@ -444,7 +444,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-11-02
+                    2020-11-03
                 </div>
                 
 
@@ -460,7 +460,33 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h4 id="我爱你"><a href="#我爱你" class="headerlink" title="我爱你"></a>我爱你</h4><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><h4 id="woaini"><a href="#woaini" class="headerlink" title="woaini"></a>woaini</h4><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h4 id="I-love-you"><a href="#I-love-you" class="headerlink" title="I love you"></a>I love you</h4><h2 id="终章"><a href="#终章" class="headerlink" title="终章"></a>终章</h2><h4 id="我爱你-woaini-i-love-you-forever"><a href="#我爱你-woaini-i-love-you-forever" class="headerlink" title="我爱你 woaini i love you forever"></a>我爱你 woaini i love you forever</h4><h5 id="参考文献《罗曼蒂克式成长》"><a href="#参考文献《罗曼蒂克式成长》" class="headerlink" title="参考文献《罗曼蒂克式成长》"></a>参考文献《罗曼蒂克式成长》</h5><p><a href="https://ayuhaha.github.io/">https://ayuhaha.github.io/</a></p>
+                <p>（和C/C++不太一样的地方）</p>
+<h4 id="1-算术运算及赋值"><a href="#1-算术运算及赋值" class="headerlink" title="1.算术运算及赋值"></a>1.算术运算及赋值</h4><p>9//2==4                             //向下取整<br>9/2==4.5<br>8/2==4.0                          整型除整型变为浮点型</p>
+<p>3**2==9 </p>
+<p>x,y,z=1,2,3<br>y<br>2<br>x*z<br>3</p>
+<p>.1+.1+.1<br>0.30000000000000004                   浮点仅为近似值，但不能因此  /0  or  /0.0</p>
+<p>print(type(.3))<br>&lt;class ‘float’&gt;<br>print(type(8))<br>&lt;class ‘int’&gt;</p>
+<h4 id="2-bool值"><a href="#2-bool值" class="headerlink" title="2.bool值"></a>2.bool值</h4><p>print(.1+.1+.1==0.3)<br>False                                              True   和    False      首字母大写</p>
+<p>1&lt;2 and 1&gt;3<br>False<br>1&gt;3 or 3&lt;5<br>True<br>not 2&gt;3<br>True</p>
+<h4 id="3-字符串"><a href="#3-字符串" class="headerlink" title="3.字符串"></a>3.字符串</h4><p>“hahaha”<br>‘hahaha’</p>
+<p>‘la\lala’<br>‘la\\lala’</p>
+<p>‘I am learning python’<br>‘I am learning python’</p>
+<p>‘l\‘am learning python’                         \跳过下一个‘，创建新字符串用“ ”括起来<br>“l’am learning python”</p>
+<p>“hahaha”<br>‘hahaha’<br>‘ha\haha’<br>‘ha\haha’</p>
+<p>x=’I am learning python’<br>type(x)<br>&lt;class ‘str’&gt;</p>
+<h4 id="4-类型和类型转换"><a href="#4-类型和类型转换" class="headerlink" title="4.类型和类型转换"></a>4.类型和类型转换</h4><p>type(True)<br>&lt;class ‘bool’&gt;<br>type(int(False))<br>&lt;class ‘int’&gt;<br>type(float(‘666’))<br>&lt;class ‘float’&gt;</p>
+<h4 id="5-字符串方法"><a href="#5-字符串方法" class="headerlink" title="5.字符串方法"></a>5.字符串方法</h4><p>First_word=’Hello’<br>Secend_word=’world’<br>print(First_word+’ ‘+Secend_word)<br>Hello world</p>
+<p>print(Secend_word*5)<br>worldworldworldworldworld</p>
+<p>print(len(Secend_word*5))<br>25</p>
+<p>Mom_said=’Tom is a good boy.’<br>Mom_said.islower()<br>False<br>Mom_said.count(‘o’)<br>4<br>Mom_said.find(‘o’)<br>1</p>
+<p>Mom_said.find(‘l’)<br>-1</p>
+<h4 id="6-列表list"><a href="#6-列表list" class="headerlink" title="6.列表list"></a>6.列表list</h4><blockquote>
+<blockquote>
+<blockquote>
+<p>A_list_of_things=[‘Hello’,1,2,3,4.0,5.0,6.0,True,False]<br>A_list_of_things[1]<br>1<br>A_list_of_things[-1]<br>False<br>len(A_list_of_things)<br>9<br>A_list_of_things[len(A_list_of_things)-1]<br>False<br>A_list_of_things[1:3]<br>[1, 2]<br>A_list_of_things[:3]<br>[‘Hello’, 1, 2]<br>A_list_of_things[3:]<br>[3, 4.0, 5.0, 6.0, True, False]</p>
+</blockquote>
+</blockquote>
+</blockquote>
 
             </div>
             <hr/>
@@ -486,7 +512,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ayuhaha.github.io/2020/11/02/%E3%80%8A%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%89%E9%99%90%E7%9A%84%E6%97%B6%E9%97%B4%E7%88%B1%E4%BD%A0%E3%80%8B/">http://ayuhaha.github.io/2020/11/02/%E3%80%8A%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%89%E9%99%90%E7%9A%84%E6%97%B6%E9%97%B4%E7%88%B1%E4%BD%A0%E3%80%8B/</a>
+                    <a href="http://ayuhaha.github.io/2020/11/03/python%E5%B0%8F%E8%AF%AD%E6%B3%95/">http://ayuhaha.github.io/2020/11/03/python%E5%B0%8F%E8%AF%AD%E6%B3%95/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -691,9 +717,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/11/03/python%E5%B0%8F%E8%AF%AD%E6%B3%95/">
                     <div class="card-image">
@@ -711,9 +738,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-11-03
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-11-03
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -722,6 +749,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -732,13 +760,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/11/02/hello-world/">
+                <a href="/2020/11/02/%E3%80%8A%E5%A6%82%E4%BD%95%E5%9C%A8%E6%9C%89%E9%99%90%E7%9A%84%E6%97%B6%E9%97%B4%E7%88%B1%E4%BD%A0%E3%80%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="《如何在有限的时间爱你？》">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">《如何在有限的时间爱你？》</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
