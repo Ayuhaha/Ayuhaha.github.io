@@ -29,7 +29,7 @@
 
     <script src="/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.2.0"></head>
+<meta name="generator" content="Hexo 5.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
 
@@ -453,7 +453,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    560
                 </div>
                 
 
@@ -470,200 +470,201 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="1-算术运算及赋值"><a href="#1-算术运算及赋值" class="headerlink" title="1.算术运算及赋值"></a>1.算术运算及赋值</h3><pre><code class="python">&gt;&gt;&gt; 9//2
-4
+                <h3 id="1-算术运算及赋值"><a href="#1-算术运算及赋值" class="headerlink" title="1.算术运算及赋值"></a>1.算术运算及赋值</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token number">9</span><span class="token operator">//</span><span class="token number">2</span>
+<span class="token number">4</span>
 
-&gt;&gt;&gt; 9/2
-4.5
+<span class="token operator">>></span><span class="token operator">></span> <span class="token number">9</span><span class="token operator">/</span><span class="token number">2</span>
+<span class="token number">4.5</span>
 
-&gt;&gt;&gt; 8/2
-4.0
+<span class="token operator">>></span><span class="token operator">></span> <span class="token number">8</span><span class="token operator">/</span><span class="token number">2</span>
+<span class="token number">4.0</span>
 
-&gt;&gt;&gt; 3**2
-9
+<span class="token operator">>></span><span class="token operator">></span> <span class="token number">3</span><span class="token operator">**</span><span class="token number">2</span>
+<span class="token number">9</span>
 
-&gt;&gt;&gt; x,y,z=1,2,3
-&gt;&gt;&gt; x
-1
-&gt;&gt;&gt; x*z
-3
+<span class="token operator">>></span><span class="token operator">></span> x<span class="token punctuation">,</span>y<span class="token punctuation">,</span>z<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span>
+<span class="token operator">>></span><span class="token operator">></span> x
+<span class="token number">1</span>
+<span class="token operator">>></span><span class="token operator">></span> x<span class="token operator">*</span>z
+<span class="token number">3</span>
 
-&gt;&gt;&gt; .1+.1+.1
-0.30000000000000004
+<span class="token operator">>></span><span class="token operator">></span> <span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">+</span><span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">+</span><span class="token punctuation">.</span><span class="token number">1</span>
+<span class="token number">0.30000000000000004</span>
 
-&gt;&gt;&gt; print(type(.3))
-&lt;class &#39;float&#39;&gt;</code></pre>
-<h3 id="2-bool值"><a href="#2-bool值" class="headerlink" title="2.bool值"></a>2.bool值</h3><pre><code class="python">&gt;&gt;&gt; print(.1+.1+.1==0.3)
-False
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>type<span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token number">3</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'float'</span><span class="token operator">></span></code></pre>
+<h3 id="2-bool值"><a href="#2-bool值" class="headerlink" title="2.bool值"></a>2.bool值</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">+</span><span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">+</span><span class="token punctuation">.</span><span class="token number">1</span><span class="token operator">==</span><span class="token number">0.3</span><span class="token punctuation">)</span>
+<span class="token boolean">False</span>
 
-&gt;&gt;&gt; 1&lt;2 and 1&gt;3
-False
+<span class="token operator">>></span><span class="token operator">></span> <span class="token number">1</span><span class="token operator">&lt;</span><span class="token number">2</span> <span class="token operator">and</span> <span class="token number">1</span><span class="token operator">></span><span class="token number">3</span>
+<span class="token boolean">False</span>
 
-&gt;&gt;&gt; 1&lt;3 or 3&lt;5
-True
+<span class="token operator">>></span><span class="token operator">></span> <span class="token number">1</span><span class="token operator">&lt;</span><span class="token number">3</span> <span class="token operator">or</span> <span class="token number">3</span><span class="token operator">&lt;</span><span class="token number">5</span>
+<span class="token boolean">True</span>
 
-&gt;&gt;&gt; not 2&gt;3
-True</code></pre>
-<h3 id="3-字符串"><a href="#3-字符串" class="headerlink" title="3.字符串"></a>3.字符串</h3><pre><code class="python">&gt;&gt;&gt; &quot;hahaha&quot;
-&#39;hahaha&#39;
+<span class="token operator">>></span><span class="token operator">></span> <span class="token operator">not</span> <span class="token number">2</span><span class="token operator">></span><span class="token number">3</span>
+<span class="token boolean">True</span></code></pre>
+<h3 id="3-字符串"><a href="#3-字符串" class="headerlink" title="3.字符串"></a>3.字符串</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">"hahaha"</span>
+<span class="token string">'hahaha'</span>
 
-&gt;&gt;&gt; &#39;la\lala&#39;
-&#39;la\\lala&#39;
+<span class="token operator">>></span><span class="token operator">></span> <span class="token string">'la\lala'</span>
+<span class="token string">'la\\lala'</span>
 
-&gt;&gt;&gt; &#39;I am learning python&#39;
-&#39;I am learning python&#39;
+<span class="token operator">>></span><span class="token operator">></span> <span class="token string">'I am learning python'</span>
+<span class="token string">'I am learning python'</span>
 
-&gt;&gt;&gt; &#39;I\&#39;am learning python&#39;       &#39;\&#39;让python跳过下个字符
-&quot;I&#39;am learning python&quot;        
+<span class="token operator">>></span><span class="token operator">></span> <span class="token string">'I\'am learning python'</span>       '\'让python跳过下个字符
+<span class="token string">"I'am learning python"</span>        
 
-&gt;&gt;&gt; x=&#39;I am a boy&#39;
-&gt;&gt;&gt; type(x)
-&lt;class &#39;str&#39;&gt;</code></pre>
-<h3 id="4-类型和类型转换"><a href="#4-类型和类型转换" class="headerlink" title="4.类型和类型转换"></a>4.类型和类型转换</h3><pre><code class="python">&gt;&gt;&gt; type(True)
-&lt;class &#39;bool&#39;&gt;
+<span class="token operator">>></span><span class="token operator">></span> x<span class="token operator">=</span><span class="token string">'I am a boy'</span>
+<span class="token operator">>></span><span class="token operator">></span> type<span class="token punctuation">(</span>x<span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'str'</span><span class="token operator">></span></code></pre>
+<h3 id="4-类型和类型转换"><a href="#4-类型和类型转换" class="headerlink" title="4.类型和类型转换"></a>4.类型和类型转换</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> type<span class="token punctuation">(</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'bool'</span><span class="token operator">></span>
 
-&gt;&gt;&gt; type(int(False))
-&lt;class &#39;int&#39;&gt;
+<span class="token operator">>></span><span class="token operator">></span> type<span class="token punctuation">(</span>int<span class="token punctuation">(</span><span class="token boolean">False</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'int'</span><span class="token operator">></span>
 
-&gt;&gt;&gt; type(float(&#39;123&#39;))
-&lt;class &#39;float&#39;&gt;</code></pre>
-<h3 id="5-字符串方法"><a href="#5-字符串方法" class="headerlink" title="5.字符串方法"></a>5.字符串方法</h3><pre><code class="python">&gt;&gt;&gt; First_word=&#39;Hello&#39;
-&gt;&gt;&gt; Secend_word=&#39;world&#39;
-&gt;&gt;&gt; print(First_word+&#39; &#39;+Secend_word)
+<span class="token operator">>></span><span class="token operator">></span> type<span class="token punctuation">(</span>float<span class="token punctuation">(</span><span class="token string">'123'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token operator">&lt;</span><span class="token keyword">class</span> <span class="token string">'float'</span><span class="token operator">></span></code></pre>
+<h3 id="5-字符串方法"><a href="#5-字符串方法" class="headerlink" title="5.字符串方法"></a>5.字符串方法</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> First_word<span class="token operator">=</span><span class="token string">'Hello'</span>
+<span class="token operator">>></span><span class="token operator">></span> Secend_word<span class="token operator">=</span><span class="token string">'world'</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>First_word<span class="token operator">+</span><span class="token string">' '</span><span class="token operator">+</span>Secend_word<span class="token punctuation">)</span>
 Hello world
 
-&gt;&gt;&gt; print(Secend_word*5)
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>Secend_word<span class="token operator">*</span><span class="token number">5</span><span class="token punctuation">)</span>
 worldworldworldworldworld
 
-&gt;&gt;&gt; print(len(Secend_word*5))
-25
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>len<span class="token punctuation">(</span>Secend_word<span class="token operator">*</span><span class="token number">5</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token number">25</span>
 
-&gt;&gt;&gt; Mom_said=&#39;Tom is a good boy.&#39;
-&gt;&gt;&gt; Mom_said.islower()
-False
-&gt;&gt;&gt; Mom_said.count(&#39;o&#39;)
-4
-&gt;&gt;&gt; Mom_said.find(&#39;o&#39;)
-1
-&gt;&gt;&gt; Mom_said.find(&#39;l&#39;)
--1</code></pre>
-<h3 id="6-列表list"><a href="#6-列表list" class="headerlink" title="6.列表list"></a>6.列表list</h3><pre><code class="python">&gt;&gt;&gt; A_list_of_things=[&#39;Hello&#39;,1,2,3,4.0,5.0,6.0,True,False]
+<span class="token operator">>></span><span class="token operator">></span> Mom_said<span class="token operator">=</span><span class="token string">'Tom is a good boy.'</span>
+<span class="token operator">>></span><span class="token operator">></span> Mom_said<span class="token punctuation">.</span>islower<span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token boolean">False</span>
+<span class="token operator">>></span><span class="token operator">></span> Mom_said<span class="token punctuation">.</span>count<span class="token punctuation">(</span><span class="token string">'o'</span><span class="token punctuation">)</span>
+<span class="token number">4</span>
+<span class="token operator">>></span><span class="token operator">></span> Mom_said<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">'o'</span><span class="token punctuation">)</span>
+<span class="token number">1</span>
+<span class="token operator">>></span><span class="token operator">></span> Mom_said<span class="token punctuation">.</span>find<span class="token punctuation">(</span><span class="token string">'l'</span><span class="token punctuation">)</span>
+<span class="token operator">-</span><span class="token number">1</span></code></pre>
+<h3 id="6-列表list"><a href="#6-列表list" class="headerlink" title="6.列表list"></a>6.列表list</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Hello'</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4.0</span><span class="token punctuation">,</span><span class="token number">5.0</span><span class="token punctuation">,</span><span class="token number">6.0</span><span class="token punctuation">,</span><span class="token boolean">True</span><span class="token punctuation">,</span><span class="token boolean">False</span><span class="token punctuation">]</span>
 
-&gt;&gt;&gt; A_list_of_things[1]
-1
+<span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token number">1</span>
 
-&gt;&gt;&gt; A_list_of_things[-1]
-False
+<span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token boolean">False</span>
 
-&gt;&gt;&gt; len(A_list_of_things)
-9
+<span class="token operator">>></span><span class="token operator">></span> len<span class="token punctuation">(</span>A_list_of_things<span class="token punctuation">)</span>
+<span class="token number">9</span>
 
-&gt;&gt;&gt; A_list_of_things[len(A_list_of_things)-1]
-False
+<span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token punctuation">[</span>len<span class="token punctuation">(</span>A_list_of_things<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token boolean">False</span>
 
-&gt;&gt;&gt; A_list_of_things[1:3]
-[1, 2]
+<span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>
 
-&gt;&gt;&gt; A_list_of_things[:3]
-[&#39;Hello&#39;, 1, 2]
+<span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token string">'Hello'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">]</span>
 
-&gt;&gt;&gt; A_list_of_things[3:]
-[3, 4.0, 5.0, 6.0, True, False]</code></pre>
-<h3 id="7-in-和-not-in"><a href="#7-in-和-not-in" class="headerlink" title="7.in 和 not in"></a>7.in 和 not in</h3><pre><code class="python">&gt;&gt;&gt; &#39;This&#39;in&#39;This is my life!&#39;
-True
+<span class="token operator">>></span><span class="token operator">></span> A_list_of_things<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4.0</span><span class="token punctuation">,</span> <span class="token number">5.0</span><span class="token punctuation">,</span> <span class="token number">6.0</span><span class="token punctuation">,</span> <span class="token boolean">True</span><span class="token punctuation">,</span> <span class="token boolean">False</span><span class="token punctuation">]</span></code></pre>
+<h3 id="7-in-和-not-in"><a href="#7-in-和-not-in" class="headerlink" title="7.in 和 not in"></a>7.in 和 not in</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> <span class="token string">'This'</span><span class="token keyword">in</span><span class="token string">'This is my life!'</span>
+<span class="token boolean">True</span>
 
-&gt;&gt;&gt; 5 not in [1,2,3,4,5,6]
-False</code></pre>
-<h3 id="8-列表list和字符串string的可变性"><a href="#8-列表list和字符串string的可变性" class="headerlink" title="8.列表list和字符串string的可变性"></a>8.列表list和字符串string的可变性</h3><pre><code class="python">&gt;&gt;&gt; Hello=&#39;Hello hi~&#39;
-&gt;&gt;&gt; Hello[1]
-&#39;e&#39;
+<span class="token operator">>></span><span class="token operator">></span> <span class="token number">5</span> <span class="token operator">not</span> <span class="token keyword">in</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token boolean">False</span></code></pre>
+<h3 id="8-列表list和字符串string的可变性"><a href="#8-列表list和字符串string的可变性" class="headerlink" title="8.列表list和字符串string的可变性"></a>8.列表list和字符串string的可变性</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> Hello<span class="token operator">=</span><span class="token string">'Hello hi~'</span>
+<span class="token operator">>></span><span class="token operator">></span> Hello<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token string">'e'</span>
 
-&gt;&gt;&gt; list1=[1,2,3,4,5,6]
-&gt;&gt;&gt; list1[1]
-2
+<span class="token operator">>></span><span class="token operator">></span> list1<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> list1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+<span class="token number">2</span>
 
-&gt;&gt;&gt; list1[0]=&#39;one&#39;
-&gt;&gt;&gt; print(list1)
-[&#39;one&#39;, 2, 3, 4, 5, 6]
+<span class="token operator">>></span><span class="token operator">></span> list1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">'one'</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>list1<span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">]</span>
 
-&gt;&gt;&gt; Hello[0]=&#39;M&#39;
-Traceback (most recent call last):
-File &quot;&lt;pyshell#6&gt;&quot;, line 1, in &lt;module&gt;
-Hello[0]=&#39;M&#39;
-TypeError: &#39;str&#39; object does not support item assignment
+<span class="token operator">>></span><span class="token operator">></span> Hello<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">'M'</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span><span class="token punctuation">:</span>
+File <span class="token string">"&lt;pyshell#6>"</span><span class="token punctuation">,</span> line <span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">in</span> <span class="token operator">&lt;</span>module<span class="token operator">></span>
+Hello<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">'M'</span>
+TypeError<span class="token punctuation">:</span> <span class="token string">'str'</span> object does <span class="token operator">not</span> support item assignment
 
-&gt;&gt;&gt; Hello=&#39;Mello hi~&#39;
-&gt;&gt;&gt; print(Hello)
-Mello hi~
+<span class="token operator">>></span><span class="token operator">></span> Hello<span class="token operator">=</span><span class="token string">'Mello hi~'</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>Hello<span class="token punctuation">)</span>
+Mello hi<span class="token operator">~</span>
 
-&gt;&gt;&gt; AYU_said=&#39;Hello!My name is AYU.&#39;
-&gt;&gt;&gt; haha=AYU_said
-&gt;&gt;&gt; haha
-&#39;Hello!My name is AYU.&#39;
-&gt;&gt;&gt; AYU_said=&#39;Hello!My name is not AYU.&#39;
-&gt;&gt;&gt; haha
-&#39;Hello!My name is AYU.&#39;
+<span class="token operator">>></span><span class="token operator">></span> AYU_said<span class="token operator">=</span><span class="token string">'Hello!My name is AYU.'</span>
+<span class="token operator">>></span><span class="token operator">></span> haha<span class="token operator">=</span>AYU_said
+<span class="token operator">>></span><span class="token operator">></span> haha
+<span class="token string">'Hello!My name is AYU.'</span>
+<span class="token operator">>></span><span class="token operator">></span> AYU_said<span class="token operator">=</span><span class="token string">'Hello!My name is not AYU.'</span>
+<span class="token operator">>></span><span class="token operator">></span> haha
+<span class="token string">'Hello!My name is AYU.'</span>
 
-&gt;&gt;&gt; score=[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;]
-&gt;&gt;&gt; score2=score
-&gt;&gt;&gt; score2
-[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;]
-&gt;&gt;&gt; score[0]=&#39;B&#39;
-&gt;&gt;&gt; score
-[&#39;B&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;]
-&gt;&gt;&gt; score2
-[&#39;B&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;]
+<span class="token operator">>></span><span class="token operator">></span> score<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token string">'C'</span><span class="token punctuation">,</span><span class="token string">'D'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> score2<span class="token operator">=</span>score
+<span class="token operator">>></span><span class="token operator">></span> score2
+<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> score<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token operator">=</span><span class="token string">'B'</span>
+<span class="token operator">>></span><span class="token operator">></span> score
+<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> score2
+<span class="token punctuation">[</span><span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">]</span>
 
 </code></pre>
-<h3 id="9-列表函数"><a href="#9-列表函数" class="headerlink" title="9.列表函数"></a>9.列表函数</h3><pre><code class="python">&gt;&gt;&gt; stock_price=[1,4,6,9,5,3,7,4,8,10,99]
-&gt;&gt;&gt; len(stock_price)
-11
-&gt;&gt;&gt; max(stock_price)
-99
-&gt;&gt;&gt; min(stock_price)
-1
+<h3 id="9-列表函数"><a href="#9-列表函数" class="headerlink" title="9.列表函数"></a>9.列表函数</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> stock_price<span class="token operator">=</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">,</span><span class="token number">99</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> len<span class="token punctuation">(</span>stock_price<span class="token punctuation">)</span>
+<span class="token number">11</span>
+<span class="token operator">>></span><span class="token operator">></span> max<span class="token punctuation">(</span>stock_price<span class="token punctuation">)</span>
+<span class="token number">99</span>
+<span class="token operator">>></span><span class="token operator">></span> min<span class="token punctuation">(</span>stock_price<span class="token punctuation">)</span>
+<span class="token number">1</span>
 
-&gt;&gt;&gt; sorted(stock_price)
-[1, 3, 4, 4, 5, 6, 7, 8, 9, 10, 99]
-&gt;&gt;&gt; sorted(stock_price,reverse=True)
-[99, 10, 9, 8, 7, 6, 5, 4, 4, 3, 1]
+<span class="token operator">>></span><span class="token operator">></span> sorted<span class="token punctuation">(</span>stock_price<span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">99</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> sorted<span class="token punctuation">(</span>stock_price<span class="token punctuation">,</span>reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token number">99</span><span class="token punctuation">,</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token number">9</span><span class="token punctuation">,</span> <span class="token number">8</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span>
 
-&gt;&gt;&gt; card=[&#39;A&#39;,&#39;A&#39;,&#39;G&#39;,&#39;F&#39;,&#39;D&#39;,&#39;H&#39;]
-&gt;&gt;&gt; sorted(card)
-[&#39;A&#39;, &#39;A&#39;, &#39;D&#39;, &#39;F&#39;, &#39;G&#39;, &#39;H&#39;]
-&gt;&gt;&gt; sorted(card , reverse=True)
-[&#39;H&#39;, &#39;G&#39;, &#39;F&#39;, &#39;D&#39;, &#39;A&#39;, &#39;A&#39;]
-&gt;&gt;&gt; card
-[&#39;A&#39;, &#39;A&#39;, &#39;G&#39;, &#39;F&#39;, &#39;D&#39;, &#39;H&#39;]</code></pre>
-<h3 id="10-列表方法join和append"><a href="#10-列表方法join和append" class="headerlink" title="10.列表方法join和append"></a>10.列表方法join和append</h3><pre><code class="python">
-&gt;&gt;&gt; a=[&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;D&#39;,&#39;E&#39;]
-&gt;&gt;&gt; b=&#39;\n&#39;.join(a)
-&gt;&gt;&gt; print(a)
-[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;]
-&gt;&gt;&gt; print(b)
+<span class="token operator">>></span><span class="token operator">></span> card<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'G'</span><span class="token punctuation">,</span><span class="token string">'F'</span><span class="token punctuation">,</span><span class="token string">'D'</span><span class="token punctuation">,</span><span class="token string">'H'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> sorted<span class="token punctuation">(</span>card<span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">,</span> <span class="token string">'H'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> sorted<span class="token punctuation">(</span>card <span class="token punctuation">,</span> reverse<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'H'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> card
+<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'G'</span><span class="token punctuation">,</span> <span class="token string">'F'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">,</span> <span class="token string">'H'</span><span class="token punctuation">]</span></code></pre>
+<h3 id="10-列表方法join和append"><a href="#10-列表方法join和append" class="headerlink" title="10.列表方法join和append"></a>10.列表方法join和append</h3><pre class=" language-python"><code class="language-python">
+<span class="token operator">>></span><span class="token operator">></span> a<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token string">'C'</span><span class="token punctuation">,</span><span class="token string">'D'</span><span class="token punctuation">,</span><span class="token string">'E'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> b<span class="token operator">=</span><span class="token string">'\n'</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span> <span class="token string">'B'</span><span class="token punctuation">,</span> <span class="token string">'C'</span><span class="token punctuation">,</span> <span class="token string">'D'</span><span class="token punctuation">,</span> <span class="token string">'E'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>b<span class="token punctuation">)</span>
 A
 B
 C
 D
 E
 
-&gt;&gt;&gt; &#39;\n&#39;.join(a)
-&#39;A\nB\nC\nD\nE&#39;
-&gt;&gt;&gt;&#39;I\&#39;am a student&#39;
-&quot;I&#39;am a student&quot;
+<span class="token operator">>></span><span class="token operator">></span> <span class="token string">'\n'</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token string">'A\nB\nC\nD\nE'</span>
+<span class="token operator">>></span><span class="token operator">></span><span class="token string">'I\'am a student'</span>
+<span class="token string">"I'am a student"</span>
 
-&gt;&gt;&gt; c=&#39;-----&#39;.join(a)
-&gt;&gt;&gt; print(c)
-A-----B-----C-----D-----E
+<span class="token operator">>></span><span class="token operator">></span> c<span class="token operator">=</span><span class="token string">'-----'</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>a<span class="token punctuation">)</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>c<span class="token punctuation">)</span>
+A<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>B<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>C<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>D<span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span><span class="token operator">-</span>E
 
-&gt;&gt;&gt; name=[&#39;Tom&#39;,&#39;Jerry&#39;,&#39;AYU&#39;,&#39;Tom&#39;]
-&gt;&gt;&gt; name.append(&#39;Mike&#39;)
-&gt;&gt;&gt; print(name)
-[&#39;Tom&#39;, &#39;Jerry&#39;, &#39;AYU&#39;, &#39;Tom&#39;, &#39;Mike&#39;]
-&gt;&gt;&gt; name.append(&#39;Mike&#39;)
-&gt;&gt;&gt; print(name)
-[&#39;Tom&#39;, &#39;Jerry&#39;, &#39;AYU&#39;, &#39;Tom&#39;, &#39;Mike&#39;, &#39;Mike&#39;]
+<span class="token operator">>></span><span class="token operator">></span> name<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'Tom'</span><span class="token punctuation">,</span><span class="token string">'Jerry'</span><span class="token punctuation">,</span><span class="token string">'AYU'</span><span class="token punctuation">,</span><span class="token string">'Tom'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> name<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">)</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'Tom'</span><span class="token punctuation">,</span> <span class="token string">'Jerry'</span><span class="token punctuation">,</span> <span class="token string">'AYU'</span><span class="token punctuation">,</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span> <span class="token string">'Mike'</span><span class="token punctuation">]</span>
+<span class="token operator">>></span><span class="token operator">></span> name<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">)</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<span class="token punctuation">[</span><span class="token string">'Tom'</span><span class="token punctuation">,</span> <span class="token string">'Jerry'</span><span class="token punctuation">,</span> <span class="token string">'AYU'</span><span class="token punctuation">,</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span> <span class="token string">'Mike'</span><span class="token punctuation">,</span> <span class="token string">'Mike'</span><span class="token punctuation">]</span>
 </code></pre>
+<h3 id="11-元组tuple"><a href="#11-元组tuple" class="headerlink" title="11.元组tuple"></a>11.元组tuple</h3><pre class=" language-python"><code class="language-python"></code></pre>
 
             </div>
             <hr/>
@@ -1170,7 +1171,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">1.2k</span>&nbsp;字
+                class="white-color">685</span>&nbsp;字
             
             
             
