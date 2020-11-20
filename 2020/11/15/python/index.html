@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《 python小语法》, 阿宇的博客">
+    <meta name="keywords" content="《python》, 阿宇的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《 python小语法》 | 阿宇的博客</title>
+    <title>《python》 | 阿宇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《 python小语法》</h1>
+                    <h1 class="description center-align post-title">《python》</h1>
                 </div>
             </div>
         </div>
@@ -453,7 +453,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    560
+                    637
                 </div>
                 
 
@@ -664,7 +664,23 @@ A<span class="token operator">-</span><span class="token operator">-</span><span
 <span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
 <span class="token punctuation">[</span><span class="token string">'Tom'</span><span class="token punctuation">,</span> <span class="token string">'Jerry'</span><span class="token punctuation">,</span> <span class="token string">'AYU'</span><span class="token punctuation">,</span> <span class="token string">'Tom'</span><span class="token punctuation">,</span> <span class="token string">'Mike'</span><span class="token punctuation">,</span> <span class="token string">'Mike'</span><span class="token punctuation">]</span>
 </code></pre>
-<h3 id="11-元组tuple"><a href="#11-元组tuple" class="headerlink" title="11.元组tuple"></a>11.元组tuple</h3><pre class=" language-python"><code class="language-python"></code></pre>
+<h3 id="11-元组tuple及元组解包和format"><a href="#11-元组tuple及元组解包和format" class="headerlink" title="11.元组tuple及元组解包和format"></a>11.元组tuple及元组解包和format</h3><pre class=" language-python"><code class="language-python">place_1<span class="token operator">=</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Longitude: '</span><span class="token punctuation">,</span>place_1<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+Longitude<span class="token punctuation">:</span>  <span class="token number">1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'Longitude: '</span><span class="token punctuation">,</span>place_1<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+Longitude<span class="token punctuation">:</span>  <span class="token number">2</span>
+dimensions<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span>
+length<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token operator">=</span>dimensions
+length
+<span class="token number">1</span>
+<span class="token keyword">print</span><span class="token punctuation">(</span>width<span class="token punctuation">)</span>
+<span class="token number">2</span>
+height
+<span class="token number">3</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'The dimensions are '</span><span class="token operator">+</span>str<span class="token punctuation">(</span>length<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">"*"</span><span class="token operator">+</span>str<span class="token punctuation">(</span>width<span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">'*'</span><span class="token operator">+</span>str<span class="token punctuation">(</span>height<span class="token punctuation">)</span><span class="token punctuation">)</span>
+The dimensions are <span class="token number">1</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">*</span><span class="token number">3</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span><span class="token string">'The dimensions are &amp;#123;&amp;#125;*&amp;#123;&amp;#125;*&amp;#123;&amp;#125;'</span><span class="token punctuation">.</span>format<span class="token punctuation">(</span>length<span class="token punctuation">,</span>width<span class="token punctuation">,</span>height<span class="token punctuation">)</span><span class="token punctuation">)</span>
+The dimensions are <span class="token number">1</span><span class="token operator">*</span><span class="token number">2</span><span class="token operator">*</span><span class="token number">3</span></code></pre>
 
             </div>
             <hr/>
@@ -690,7 +706,7 @@ A<span class="token operator">-</span><span class="token operator">-</span><span
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://ayuhaha.github.io/2020/11/15/python-xiao-yu-fa/">http://ayuhaha.github.io/2020/11/15/python-xiao-yu-fa/</a>
+                    <a href="http://ayuhaha.github.io/2020/11/15/python/">http://ayuhaha.github.io/2020/11/15/python/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -900,13 +916,13 @@ A<span class="token operator">-</span><span class="token operator">-</span><span
                 <i class="far fa-dot-circle"></i>&nbsp;本篇
             </div>
             <div class="card">
-                <a href="/2020/11/15/python-xiao-yu-fa/">
+                <a href="/2020/11/15/python/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="《 python小语法》">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="《python》">
                         
-                        <span class="card-title">《 python小语法》</span>
+                        <span class="card-title">《python》</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1171,7 +1187,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">685</span>&nbsp;字
+                class="white-color">762</span>&nbsp;字
             
             
             
