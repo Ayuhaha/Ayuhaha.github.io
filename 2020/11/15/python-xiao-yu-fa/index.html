@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="《python》, 阿宇的博客">
+    <meta name="keywords" content="《python小语法》, 阿宇的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>《python》 | 阿宇的博客</title>
+    <title>《python小语法》 | 阿宇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/10.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">《python》</h1>
+                    <h1 class="description center-align post-title">《python小语法》</h1>
                 </div>
             </div>
         </div>
@@ -453,7 +453,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    745
+                    861
                 </div>
                 
 
@@ -704,6 +704,26 @@ The dimensions are <span class="token number">1</span><span class="token operato
 <span class="token operator">>></span><span class="token operator">></span> numbers
 <span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;2, 3, 4, 5, 6, 7, 8, 9&amp;#125;</span>
 <span class="token operator">>></span><span class="token operator">></span> </code></pre>
+<h3 id="13-set字典-get-及其返回值和自定义返回值"><a href="#13-set字典-get-及其返回值和自定义返回值" class="headerlink" title="13.set字典 get()及其返回值和自定义返回值"></a>13.set字典 get()及其返回值和自定义返回值</h3><pre class=" language-python"><code class="language-python"><span class="token operator">>></span><span class="token operator">></span> names<span class="token operator">=</span><span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;'Tom':'Tom is very tall.','Ayu':'Ayu is very handsome!'&amp;#125;</span>
+<span class="token operator">>></span><span class="token operator">></span> names
+<span class="token operator">&amp;</span><span class="token comment" spellcheck="true">#123;'Tom': 'Tom is very tall.', 'Ayu': 'Ayu is very handsome!'&amp;#125;</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>names<span class="token punctuation">[</span><span class="token string">'Ayu'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+Ayu <span class="token keyword">is</span> very handsome!
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>names<span class="token punctuation">[</span><span class="token string">'Mike'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+Traceback <span class="token punctuation">(</span>most recent call last<span class="token punctuation">)</span><span class="token punctuation">:</span>
+  File <span class="token string">"&lt;pyshell#18>"</span><span class="token punctuation">,</span> line <span class="token number">1</span><span class="token punctuation">,</span> <span class="token keyword">in</span> <span class="token operator">&lt;</span>module<span class="token operator">></span>
+    <span class="token keyword">print</span><span class="token punctuation">(</span>names<span class="token punctuation">[</span><span class="token string">'Mike'</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+KeyError<span class="token punctuation">:</span> <span class="token string">'Mike'</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>names<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+None
+<span class="token operator">>></span><span class="token operator">></span> x<span class="token operator">=</span>names<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">)</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>x <span class="token keyword">is</span> None<span class="token punctuation">)</span>
+<span class="token boolean">True</span>
+<span class="token operator">>></span><span class="token operator">></span> <span class="token keyword">print</span><span class="token punctuation">(</span>x <span class="token keyword">is</span> <span class="token boolean">True</span><span class="token punctuation">)</span>
+<span class="token boolean">False</span>
+<span class="token operator">>></span><span class="token operator">></span> 
+<span class="token operator">>></span><span class="token operator">></span> names<span class="token punctuation">.</span>get<span class="token punctuation">(</span><span class="token string">'Mike'</span><span class="token punctuation">,</span><span class="token string">'Mike is a boy and he isn \'t here.'</span><span class="token punctuation">)</span>
+<span class="token string">"Mike is a boy and he isn 't here."</span></code></pre>
 
             </div>
             <hr/>
@@ -943,9 +963,9 @@ The dimensions are <span class="token number">1</span><span class="token operato
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="《python》">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="《python小语法》">
                         
-                        <span class="card-title">《python》</span>
+                        <span class="card-title">《python小语法》</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1210,7 +1230,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">870</span>&nbsp;字
+                class="white-color">986</span>&nbsp;字
             
             
             
